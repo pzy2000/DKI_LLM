@@ -19,6 +19,10 @@ This repo hosts multiple open-source codes of the [Microsoft DKI LLM Group](http
 > **[RePrompt: Reasoning-Augmented Reprompting for Text-to-Image Generation via Reinforcement Learning](RePrompt)**
 > Mingrui Wu, Lu Wang, Pu Zhao, Fangkai Yang, Jianjin Zhang, Jianfeng Liu, Yuefeng Zhan, Weihao Han, Hao Sun, Jiayi Ji, Xiaoshuai Sun, Qingwei Lin, Weiwei Deng, Dongmei Zhang, Feng Sun, Qi Zhang, Rongrong Ji. Arxiv.
 
+### Code Gen
+
+> **[RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository](RepoGenesis)**
+> Zhiyuan Peng, Xin Yin, Pu Zhao, Fangkai Yang, Lu Wang, Ran Jia, Xu Chen, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang. Arxiv.
 
 ## Contributing
 
