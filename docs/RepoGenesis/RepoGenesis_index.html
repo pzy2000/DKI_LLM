@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <meta name="description"
+        content="RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository">
+    <meta property="og:title"
+        content="RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository" />
+    <meta property="og:description"
+        content="The first multilingual benchmark for repository-level end-to-end web microservice generation." />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title"
+        content="RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository">
+    <meta name="twitter:description"
+        content="RepoGenesis assesses LLMs' capability in generating complete web microservice repositories from natural language requirements.">
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="LLM, Code Generation, Benchmark, Microservices, Repository Generation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <!-- 论文标题 -->
+                        <h1 class="title is-1 publication-title">RepoGenesis: Benchmarking End-to-End Microservice
+                            Generation from Readme to Repository</h1>
+
+                        <!-- 作者信息 -->
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                Anonymous Authors
+                            </span>
+                        </div>
+                        <div class="is-size-5 publication-authors" style="margin-top: 0.5em;">
+                            <span class="author-block">
+                                Under Review
+                            </span>
+                        </div>
+                        <div class="is-size-5 publication-authors" style="margin-top: 0.5em;">
+                            <span class="author-block">
+                                Email: <a href="mailto:pzy2000@sjtu.edu.cn">pzy2000@sjtu.edu.cn</a>, <a
+                                    href="mailto:xyin@zju.edu.cn">xyin@zju.edu.cn</a>
+                            </span>
+                        </div>
+
+                        <!-- 链接区块 -->
+                        <div class="publication-links" style="margin-top: 1em;">
+                            <!-- ArXiv abstract链接 -->
+                            <span class="link-block">
+                                <a href="https://arxiv.org/abs/2505.17540" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-arxiv"></i>
+                                    </span>
+                                    <span>arXiv</span>
+                                </a>
+                            </span>
+                            <!-- Github链接 -->
+                            <span class="link-block">
+                                <a href="https://github.com/microsoft/DKI_LLM/tree/main/RepoGenesis" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+
+                            <!-- Arxiv PDF链接 -->
+                            <span class="link-block">
+                                <a href="https://arxiv.org/pdf/2505.17540.pdf" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                </a>
+                            </span>
+                            <!-- hugginface链接 -->
+                            <span class="link-block">
+                                <a href="https://huggingface.co/" target="_blank"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <img src="static/images/huggingface.svg" alt="HuggingFace Icon"
+                                            style="width:1em; height:1em;">
+                                    </span>
+                                    <span>HuggingFace-Coming Soon</span>
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- overview-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <div style="text-align: center;">
+                    <img src="static/images/overview.png" alt="RepoGenesis Overview" />
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    Overview of <strong>RepoGenesis</strong>. RepoGenesis is the first benchmark for evaluating
+                    repository-level microservice generation from natural language requirements. It includes 106 diverse
+                    web microservice repositories across 11 frameworks and 18 application domains, evaluating LLMs with
+                    multi-dimensional metrics including Pass@1, API Coverage (AC), and Deployment Success Rate (DSR).
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- End overview -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Recent advancements in Large Language Models (LLMs) have demonstrated remarkable
+                            capabilities in code generation. However, existing benchmarks primarily focus on
+                            function-level or class-level code generation, leaving a significant gap in evaluating LLMs'
+                            ability to generate complete, deployable software repositories. We introduce
+                            <strong>RepoGenesis</strong>, the first multilingual benchmark for repository-level
+                            end-to-end web microservice generation. RepoGenesis consists of 106 diverse web microservice
+                            repositories (60 Python, 46 Java) spanning 11 frameworks and 18 application domains. Unlike
+                            traditional benchmarks, RepoGenesis assesses LLMs' capability to generate complete
+                            repositories from natural language requirements, including project structure, dependencies,
+                            configurations, and implementation. We evaluate multiple LLM-based agents and commercial
+                            IDEs using three key metrics: <strong>Pass@1</strong> for functional correctness,
+                            <strong>API Coverage (AC)</strong> for implementation completeness, and <strong>Deployment
+                                Success Rate (DSR)</strong> for deployability. Our comprehensive evaluation reveals
+                            significant challenges in repository-level code generation and provides insights into the
+                            current state and future directions of automated software development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Key Features -->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="title is-3 subtitle has-text-centered">Key Features</h2>
+                <div class="content">
+                    <ul>
+                        <li><strong>106 diverse web microservice repositories</strong> (60 Python, 46 Java)</li>
+                        <li><strong>11 frameworks</strong> including Django, FastAPI, Javalin, Spring Boot, and more
+                        </li>
+                        <li><strong>18 application domains</strong> covering authentication, content management, gaming,
+                            file management, and more</li>
+                        <li><strong>Multi-dimensional metrics</strong>: Pass@1 for functional correctness, API Coverage
+                            (AC) for implementation completeness, and Deployment Success Rate (DSR) for deployability
+                        </li>
+                        <li><strong>Support for multiple agents and IDEs</strong>: MetaGPT, DeepCode, Qwen-Agent,
+                            MS-Agent, Cursor, and GitHub Copilot</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Key Features -->
+
+    <!-- Evaluation Metrics -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Evaluation Metrics</h2>
+                    <div class="content has-text-justified">
+                        <h3><strong>Pass@1 (Functional Correctness)</strong></h3>
+                        <p>
+                            Measures whether the generated repository passes all test cases on the first attempt. A
+                            repository achieves Pass@1 = 1.0 only if all test cases pass.
+                        </p>
+
+                        <h3><strong>API Coverage (AC)</strong></h3>
+                        <p>
+                            Measures implementation completeness by checking if all required API endpoints are present.
+                            API endpoints are extracted from README specifications and validated in the generated code.
+                        </p>
+
+                        <h3><strong>Deployment Success Rate (DSR)</strong></h3>
+                        <p>
+                            Measures basic deployability by checking if: (1) Dependencies can be installed, (2) Service
+                            can start without errors, (3) Health check endpoint responds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Evaluation Metrics -->
+
+    <!-- End paper abstract -->
+
+    <!-- Image carousel
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            First image description.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Third image description.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Fourth image description.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+    <!-- Youtube video
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+
+    <!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+
+    <!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+      <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
+    </div>
+  </div>
+</section>
+ -->
+
+    <!-- BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{anonymous2025RepoGenesis,
+  title={RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository},
+  author={Anonymous},
+  journal={Under Review},
+  year={2025}
+}</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the source code of this website, we just ask that you link back to
+                            this page in the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
+                                Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
