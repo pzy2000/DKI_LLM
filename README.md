@@ -24,6 +24,11 @@ This repo hosts multiple open-source codes of the [Microsoft DKI LLM Group](http
 > **[RepoGenesis: Benchmarking End-to-End Microservice Generation from Readme to Repository](RepoGenesis)**
 > Zhiyuan Peng, Xin Yin, Pu Zhao, Fangkai Yang, Lu Wang, Ran Jia, Xu Chen, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang. Arxiv.
 
+### Ads
+
+> **[LettinGo: Explore User Profile Generation for Recommendation System](LettinGo)**
+> Lu Wang, Di Zhang, Fangkai Yang, Pu Zhao, Jianfeng Liu, Yuefeng Zhan, Hao Sun, Qingwei Lin, Weiwei Deng, Dongmei Zhang, Feng Sun, Qi Zhang. KDD 2025.
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
